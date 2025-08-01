@@ -11,18 +11,34 @@ function App() {
   const [likedProjects, setLikedProjects] = useState(new Set())
 
   const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId)
-    if (element) {
-      const navbarHeight = 80
-      const elementTop = element.getBoundingClientRect().top + window.pageYOffset
-      const offsetTop = elementTop - navbarHeight
-      
-      window.scrollTo({
-        top: offsetTop,
-        behavior: 'smooth'
-      })
-    }
+    // Close the mobile menu first
     setIsMenuOpen(false)
+    
+    // Small delay to allow the menu to close before scrolling
+    setTimeout(() => {
+      const element = document.getElementById(sectionId)
+      if (element) {
+        // Get the current scroll position
+        const currentPosition = window.pageYOffset || document.documentElement.scrollTop
+        
+        // Get the element's position relative to the document
+        const elementRect = element.getBoundingClientRect()
+        const elementTop = elementRect.top + currentPosition
+        
+        // Calculate the offset, considering the navbar height
+        const navbarHeight = 80
+        const offsetTop = elementTop - navbarHeight
+        
+        // Scroll to the element
+        window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth'
+        })
+        
+        // Update the active section
+        setActiveSection(sectionId)
+      }
+    }, 300) // 300ms matches the menu close animation duration
   }
 
   const toggleLike = (projectIndex) => {

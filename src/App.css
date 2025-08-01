@@ -101,25 +101,60 @@ body {
   color: #fff;
 }
 
+/* Mobile Menu Button - Hidden by default */
 .mobile-menu-btn {
-  display: none;
-  background: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  padding: 0.5rem;
-  position: absolute;
-  right: -1rem;
+  display: none !important; /* Hidden by default */
+  background: #ff6b35 !important;
+  border: none !important;
+  border-radius: 50% !important;
+  color: #fff !important;
+  cursor: pointer !important;
+  width: 50px !important;
+  height: 50px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: fixed !important;
+  right: 1.5rem !important;
+  left: auto !important;
+  top: 1.5rem !important;
+  z-index: 1001 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+  transition: all 0.3s ease !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  transform: none !important;
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -o-transform: none !important;
+  /* Ensure it's not affected by any parent transforms */
+  transform: translate3d(0, 0, 0) !important;
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  will-change: transform;
+}
+
+.mobile-menu-btn:hover {
+  background: rgba(255, 107, 53, 1);
+  transform: scale(1.05);
 }
 
 .mobile-nav {
+  position: fixed;
+  top: 5.5rem;
+  right: 1.5rem;
   background: rgba(40, 40, 40, 0.98);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
-  padding: 1rem 2rem;
-  margin-top: 0.5rem;
+  padding: 1.5rem 2rem;
+  z-index: 1000;
   backdrop-filter: blur(20px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: none;
 }
 
 .mobile-nav-link {
@@ -1132,21 +1167,121 @@ section {
 }
 
 @media (max-width: 768px) {
+  /* Mobile Navbar */
   .navbar {
-    top: 1rem;
-    right: 1rem;
-    left: auto;
-    transform: none;
-    border-radius: 50px;
-    padding: 0.75rem 1.5rem;
+    position: fixed !important;
+    top: 0 !important;
+    left: auto !important;
+    right: 0 !important;
+    z-index: 1000 !important;
+    padding: 1.5rem 1.5rem 0 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    height: auto !important;
+    width: auto !important;
+    max-width: none !important;
+    pointer-events: none !important;
+    transform: none !important;
+    -webkit-transform: none !important;
+  }
+  
+  .navbar * {
+    pointer-events: auto !important;
+  }
+  
+  /* Remove any potential pseudo-elements and borders that might be causing the orange line */
+  .navbar::before,
+  .navbar::after,
+  body::before,
+  body::after,
+  .navbar,
+  .navbar *,
+  .mobile-nav,
+  .mobile-nav * {
+    content: none !important;
+    display: block;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background-image: none !important;
+  }
+  
+  /* Ensure no border or outline is visible on the navbar in mobile */
+  .navbar {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background-image: none !important;
+    background-color: transparent !important;
+  }
+  
+  /* Target the mobile menu button specifically */
+  .mobile-menu-btn {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: rgba(255, 107, 53, 0.9) !important;
+    background-image: none !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Remove any potential orange line from the mobile menu button */
+  .mobile-menu-btn::before,
+  .mobile-menu-btn::after {
+    content: '' !important;
+    display: none !important;
+  }
+  
+  /* Ensure no border appears on hover */
+  .mobile-menu-btn:hover {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  /* Ensure no border on the mobile nav container */
+  .mobile-nav {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  /* Target all elements to remove any potential orange line */
+  * {
+    border-top: none !important;
+    border-top-color: transparent !important;
+    border-top-style: none !important;
+    border-top-width: 0 !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+  
+  /* Specific fix for mobile viewport */
+  @supports (-webkit-touch-callout: none) {
+    body {
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+    }
+    
+    .navbar, .mobile-menu-btn, .mobile-nav {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+    }
   }
   
   .desktop-nav {
     display: none;
   }
   
+  /* Show mobile menu button only on mobile */
   .mobile-menu-btn {
-    display: block;
+    display: flex !important;
   }
   
   .hero-content {
