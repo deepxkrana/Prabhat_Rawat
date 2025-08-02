@@ -98,7 +98,7 @@ function App() {
   const featuredProjects = [
     {
       title: "Choti Sarrdaarni",
-      type: "Drama Series",
+      type: "Colors TV",
       year: "2019-2022",
       description: "A courageous woman battles against societal norms and political conspiracies to protect her child and uphold justice.",
       episodes: [
@@ -106,42 +106,35 @@ function App() {
         { title: "Episode 2: Challenges Arise", link: "https://www.hotstar.com/in/tv/choti-sarrdaarni/1260021502" }
       ],
       image: "/images/CS.jpg",
-      video: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4",
-      rating: 4.8,
-      views: "2.3M",
-      duration: "45 min"
     },
     {
       title: "Muskuraane Ki Vajah Tum Ho",
-      type: "Drama Series",
-      year: "2022-2023",
+      type: "Colors TV",
+      year: "2022",
       description: "A strong single mother's journey of resilience and love as she confronts betrayal and seeks dignity in a judgmental society",
       episodes: [
         { title: "Pilot: A New Chapter", link: "https://www.sonyliv.com/shows/muskuraane-ki-vajah-tum-ho-1900000561" },
         { title: "Facing the Storm", link: "https://www.sonyliv.com/shows/muskuraane-ki-vajah-tum-ho-1900000562" }
       ],
       image: "/images/MKWTH.jpg",
-      video: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4",
-      rating: 4.6,
     },
     {
       title: "Teri Meri Doriyaan",
-      type: "Drama Series",
-      year: "2023-2024",
+      type: "Star Plus",
+      year: "2022-2024",
       description: "A modern romantic drama showcasing three intertwined love stories destined by fate, yet challenged by misunderstandings.",
       episodes: [
         { title: "Premiere: Threads of Fate", link: "https://www.voot.com/shows/teri-meri-doriyaan/1/1029376" },
         { title: "Crossed Paths", link: "https://www.voot.com/shows/teri-meri-doriyaan/1/1029377" }
       ],
       image: "/images/TMD.jpg",
-      video: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4",
     }
   ]
 
   const allProjects = [
     {
       title: "Choti Sarrdaarni",
-      type: "Drama Series",
+      type: "Colors TV",
       year: "2019-2022",
       description: "A courageous woman battles against societal norms and political conspiracies to protect her child and uphold justice.",
       episodes: [
@@ -149,102 +142,105 @@ function App() {
         { title: "Episode 2: Challenges Arise", link: "https://www.hotstar.com/in/tv/choti-sarrdaarni/1260021502" }
       ],
       image: "/images/CS.jpg",
-      rating: 4.8,
-      views: "2.3M",
-      duration: "45 min"
     },
     {
       title: "Muskuraane Ki Vajah Tum Ho",
-      type: "Drama Series",
-      year: "2022-2023",
+      type: "Colors TV",
+      year: "2022",
       description: "A strong single mother's journey of resilience and love as she confronts betrayal and seeks dignity in a judgmental society",
       episodes: [
         { title: "Pilot: A New Chapter", link: "https://www.sonyliv.com/shows/muskuraane-ki-vajah-tum-ho-1900000561" },
         { title: "Facing the Storm", link: "https://www.sonyliv.com/shows/muskuraane-ki-vajah-tum-ho-1900000562" }
       ],
       image: "/images/MKWTH.jpg",
-      rating: 4.6,
-      views: "1.8M",
-      duration: "60 min"
     },
     {
       title: "Teri Meri Doriyaan",
-      type: "Drama Series",
-      year: "2023-2024",
+      type: "Star Plus",
+      year: "2022-2024",
       description: "A modern romantic drama showcasing three intertwined love stories destined by fate, yet challenged by misunderstandings.",
       episodes: [
         { title: "Premiere: Threads of Fate", link: "https://www.voot.com/shows/teri-meri-doriyaan/1/1029376" },
         { title: "Crossed Paths", link: "https://www.voot.com/shows/teri-meri-doriyaan/1/1029377" }
       ],
       image: "/images/TMD.jpg",
-      rating: 4.9,
-      views: "3.1M",
-      duration: "90 min"
     },
     {
-      title: "City Nights",
-      type: "Drama Series",
-      year: "2020-2021",
-      description: "Urban drama that captured the essence of modern city life",
+      title: "Harphoul Mohini",
+      type: "Colors TV",
+      year: "2022",
+      description: "A light-hearted cultural clash love story between a Haryanvi boy and a South Indian girl brought together by destiny.",
       episodes: [
         { title: "Pilot: City Lights", link: "#" },
         { title: "Midnight Confessions", link: "#" }
       ],
-      image: "https://images.unsplash.com/photo-1514565131-fce0801e5785?w=800&h=600&fit=crop",
-      rating: 4.7,
-      views: "1.9M",
-      duration: "50 min"
+      image: "/images/HM.jpg",
     },
     {
-      title: "Live from Broadway",
-      type: "Live Special",
-      year: "2019",
-      description: "Historic live television event celebrating theater",
+      title: "Deewaniyat",
+      type: "Star Plus",
+      year: "2024-2025",
+      description: "A passionate tale of love, obsession, and betrayal where emotions run deep and consequences are life-changing.",
       episodes: [
         { title: "Act 1: Opening Night", link: "#" },
         { title: "Act 2: Center Stage", link: "#" }
       ],
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop",
-      rating: 4.5,
-      views: "1.2M",
-      duration: "120 min"
+      image: "/images/DEE.jpg",
     },
     {
-      title: "The Art of War",
-      type: "Documentary Series",
-      year: "2018",
-      description: "Epic documentary series on military strategy and history",
+      title: "Kahani Pehle Pyaar ki",
+      type: "Dangal TV",
+      year: "2025",
+      description: "A heartfelt story set in Bhopal, where Neha’s childhood love for Sanju is tested by time, destiny, and self-discovery.",
       episodes: [
         { title: "Episode 1: The Strategist's Mind", link: "#" },
         { title: "Episode 2: Battlefield Tactics", link: "#" }
       ],
-      image: "https://images.unsplash.com/photo-1543852786-1cf6624b9987?w=800&h=600&fit=crop",
-      rating: 4.8,
-      views: "2.7M",
-      duration: "75 min"
+      image: "/images/KPPK.jpg",
     }
   ]
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "Executive Producer, Netflix",
-      content: "Alex has an incredible eye for storytelling. His direction brought our series to life in ways we never imagined possible.",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
+      name: "Anita Raj",
+      role: "Actress",
+      content: "Prabhat's creative vision transformed our script into truly cinematic. His ability to capture emotion in every frame elevated the entire production.",
+      avatar: "/images/Anita.jpg",
       rating: 5
     },
     {
-      name: "Michael Chen",
-      role: "Studio Head, Warner Bros.",
-      content: "Working with Alex was a game-changer for our production. His creative vision and technical expertise are unmatched.",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+      name: "Jaladh Sharma",
+      role: "Director",
+      content: "Working with Prabhat was a masterclass in direction. He brought clarity, intensity, and beauty to every scene, making our show a standout success.",
+      avatar: "/images/Jaladh.jpg",
       rating: 5
     },
     {
-      name: "Emily Rodriguez",
-      role: "Award-winning Actress",
-      content: "Alex creates an environment where actors can truly shine. His direction is both challenging and inspiring.",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+      name: "Surendra Pal",
+      role: "Actor",
+      content: "From day one, Prabhat understood the soul of our story. His direction not only enhanced the narrative but created moments that viewers will remember forever.",
+      avatar: "/images/Surendra.jpg",
+      rating: 5
+    },
+    {
+      name: "Surendra Pal",
+      role: "Actor",
+      content: "From day one, Prabhat understood the soul of our story. His direction not only enhanced the narrative but created moments that viewers will remember forever.",
+      avatar: "/images/Surendra.jpg",
+      rating: 5
+    },
+    {
+      name: "Surendra Pal",
+      role: "Actor",
+      content: "From day one, Prabhat understood the soul of our story. His direction not only enhanced the narrative but created moments that viewers will remember forever.",
+      avatar: "/images/Surendra.jpg",
+      rating: 5
+    },
+    {
+      name: "Surendra Pal",
+      role: "Actor",
+      content: "From day one, Prabhat understood the soul of our story. His direction not only enhanced the narrative but created moments that viewers will remember forever.",
+      avatar: "/images/Surendra.jpg",
       rating: 5
     }
   ]
@@ -394,7 +390,7 @@ function App() {
               transition={{ type: "spring", stiffness: 300 }}
             >
               <h3>25+</h3>
-              <p>Awards Won</p>
+              <p>Years in Industry</p>
             </motion.div>
           </motion.div>
         </div>
@@ -438,12 +434,6 @@ function App() {
             >
               <div className="featured-image">
                 <img src={featuredProjects[currentProjectIndex].image} alt={featuredProjects[currentProjectIndex].title} />
-                <div className="featured-overlay">
-                  <button className="play-button large" onClick={() => setIsVideoPlaying(true)}>
-                    <Play />
-                  </button>
-                </div>
-
               </div>
               <div className="featured-info">
                 <h3>{featuredProjects[currentProjectIndex].title}</h3>
@@ -513,14 +503,16 @@ function App() {
               className="about-text"
             >
               <p>
-                With over 15 years in the television industry, I've had the privilege of directing 
-                some of the most compelling shows on air. My approach combines traditional storytelling 
-                techniques with cutting-edge technology to create unforgettable viewing experiences.
+              With over a decade in the Indian television industry, I've had the privilege of directing 
+              and setting up some of the most talked-about shows across Colors and StarPlus. My directorial 
+              vision blends emotionally grounded storytelling with high production value to create engaging 
+              narratives that resonate with diverse audiences.
               </p>
               <p>
-                I specialize in drama series, reality television, and documentary programming, 
-                always pushing the boundaries of what's possible in the medium. My work has been 
-                recognized with numerous industry awards and critical acclaim.
+              I specialize in primetime drama series, handling everything from show setup to daily episode 
+              execution with precision. Collaborating with leading production houses like Cockrow & Shaika 
+              Entertainment, my work has consistently delivered strong TRPs and audience loyalty, earning 
+              critical acclaim and recognition in industry circles.
               </p>
               
               <div className="skills">
@@ -541,7 +533,7 @@ function App() {
               className="about-image"
             >
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=600&fit=crop" 
+                src="/images/Prabhat.jpg"
                 alt="Prabhat Rawat - TV Director"
                 className="director-portrait"
               />
@@ -581,11 +573,6 @@ function App() {
               >
                 <div className="project-image">
                   <img src={project.image} alt={project.title} />
-                  <div className="project-overlay">
-                    <button className="play-button">
-                      <Play />
-                    </button>
-                  </div>
                 </div>
                 <div className="project-info">
                   <div className="project-header">
@@ -659,7 +646,7 @@ function App() {
                     <p>{testimonial.role}</p>
                     <div className="rating">
                       {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="star-icon" />
+                        <Star key={i} className="star-icon" fill="currentColor" />
                       ))}
                     </div>
                   </div>
@@ -728,7 +715,7 @@ function App() {
                 <div className="social-icons">
                   <a href="#" className="social-link">IMDb</a>
                   <a href="#" className="social-link">LinkedIn</a>
-                  <a href="#" className="social-link">Instagram</a>
+                  <a href="https://www.instagram.com/prabhatrawat75?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="social-link">Instagram</a>
                 </div>
               </div>
             </motion.div>
@@ -744,7 +731,7 @@ function App() {
               <Video className="logo-icon" />
               <span>Prabhat Rawat</span>
             </div>
-            <p>&copy; 2024 Prabhat Rawat. All rights reserved.</p>
+            <p>&copy; 2024 Prabhat Rawat. All rights reserved. | Developed by Deepak Rana</p>
           </div>
         </div>
       </footer>
