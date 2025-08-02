@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Play, Mail, Phone, MapPin, Award, Users, Video, Star, Quote, Calendar, Clock, Eye, Heart, Share2, ArrowRight, ArrowLeft, ArrowDown, ExternalLink } from 'lucide-react'
+import { Menu, X, Play, Mail, Phone, MapPin, Award, Users, Video, Star, Quote, Calendar, Clock, Eye, Heart, Share2, ArrowRight, ArrowLeft, ArrowDown, ExternalLink, Linkedin, Instagram } from 'lucide-react'
 import './App.css'
 
 function App() {
@@ -102,21 +102,21 @@ function App() {
       year: "2019-2022",
       description: "A courageous woman battles against societal norms and political conspiracies to protect her child and uphold justice.",
       episodes: [
-        { title: "Episode 1: New Beginnings", link: "https://www.hotstar.com/in/tv/choti-sarrdaarni/1260021501" },
-        { title: "Episode 2: Challenges Arise", link: "https://www.hotstar.com/in/tv/choti-sarrdaarni/1260021502" }
+        { title: "Episode 792: Kulwant Feels Dejected", link: "https://www.hotstar.com/in/shows/choti-sarrdaarni/1971002364/kulwant-feels-dejected/1971022196/watch?" },
+        { title: "Episode 793: Jeeto Humiliates Mannat", link: "https://www.hotstar.com/in/shows/choti-sarrdaarni/1971002364/jeeto-humiliates-mannat/1971022206/watch?" }
       ],
       image: "/images/CS.jpg",
     },
     {
-      title: "Muskuraane Ki Vajah Tum Ho",
-      type: "Colors TV",
-      year: "2022",
-      description: "A strong single mother's journey of resilience and love as she confronts betrayal and seeks dignity in a judgmental society",
+      title: "Deewaniyat",
+      type: "Star Plus",
+      year: "2024-2025",
+      description: "A passionate tale of love, intense obsession, and deep betrayal where emotions run deep and consequences are life-changing.",
       episodes: [
-        { title: "Pilot: A New Chapter", link: "https://www.sonyliv.com/shows/muskuraane-ki-vajah-tum-ho-1900000561" },
-        { title: "Facing the Storm", link: "https://www.sonyliv.com/shows/muskuraane-ki-vajah-tum-ho-1900000562" }
+        { title: "Episode 1: Mannat and Jeet The Love Birds", link: "https://www.hotstar.com/in/shows/deewaniyat/1271339291/mannat-and-jeet-the-love-birds/1000903751/watch?" },
+        { title: "Episode 2: Whose Side Will Jeet Stand By", link: "https://www.hotstar.com/in/shows/deewaniyat/1271339291/whose-side-will-jeet-stand-by/1000903762/watch?" }
       ],
-      image: "/images/MKWTH.jpg",
+      image: "/images/DEE.jpg",
     },
     {
       title: "Teri Meri Doriyaan",
@@ -124,8 +124,8 @@ function App() {
       year: "2022-2024",
       description: "A modern romantic drama showcasing three intertwined love stories destined by fate, yet challenged by misunderstandings.",
       episodes: [
-        { title: "Premiere: Threads of Fate", link: "https://www.voot.com/shows/teri-meri-doriyaan/1/1029376" },
-        { title: "Crossed Paths", link: "https://www.voot.com/shows/teri-meri-doriyaan/1/1029377" }
+        { title: "Episode 9: Sahiba at the Brars Event", link: "https://www.hotstar.com/in/shows/teri-meri-doriyaann/1260127842/sahiba-at-the-brars-event/1000282014/watch?search_query=teri+meri" },
+        { title: "Episode 10: Veer Makes an Announcement", link: "https://www.hotstar.com/in/shows/teri-meri-doriyaann/1260127842/veer-makes-an-announcement/1000282030/watch?search_query=teri+meri" }
       ],
       image: "/images/TMD.jpg",
     }
@@ -133,26 +133,26 @@ function App() {
 
   const allProjects = [
     {
-      title: "Choti Sarrdaarni",
-      type: "Colors TV",
-      year: "2019-2022",
-      description: "A courageous woman battles against societal norms and political conspiracies to protect her child and uphold justice.",
+      title: "Kahani Pehle Pyaar ki",
+      type: "Dangal TV",
+      year: "2025",
+      description: "A heartfelt story set in Bhopal, where Neha’s childhood love for Sanju is tested by time, destiny, and self-discovery.",
       episodes: [
-        { title: "Episode 1: New Beginnings", link: "https://www.hotstar.com/in/tv/choti-sarrdaarni/1260021501" },
-        { title: "Episode 2: Challenges Arise", link: "https://www.hotstar.com/in/tv/choti-sarrdaarni/1260021502" }
+        { title: "Episode 12: Panchmarhi Trip", link: "https://youtu.be/-uirE2szoJM?si=vqBi7zrRYm6Wq8NX" },
+        { title: "Episode 13: Goons Attack Neha", link: "https://youtu.be/iDbUGBcjihc?si=lOfaDoaXnvz4H4qy" }
       ],
-      image: "/images/CS.jpg",
+      image: "/images/KPPK.jpg",
     },
     {
-      title: "Muskuraane Ki Vajah Tum Ho",
-      type: "Colors TV",
-      year: "2022",
-      description: "A strong single mother's journey of resilience and love as she confronts betrayal and seeks dignity in a judgmental society",
+      title: "Deewaniyat",
+      type: "Star Plus",
+      year: "2024-2025",
+      description: "A passionate tale of love, obsession, and betrayal where emotions run deep and consequences are life-changing.",
       episodes: [
-        { title: "Pilot: A New Chapter", link: "https://www.sonyliv.com/shows/muskuraane-ki-vajah-tum-ho-1900000561" },
-        { title: "Facing the Storm", link: "https://www.sonyliv.com/shows/muskuraane-ki-vajah-tum-ho-1900000562" }
+        { title: "Episode 1: Manat and Jeet The Love Birds", link: "https://www.hotstar.com/in/shows/deewaniyat/1271339291/mannat-and-jeet-the-love-birds/1000903751/watch?" },
+        { title: "Episode 2: Whose Side Will Jeet Stand By", link: "https://www.hotstar.com/in/shows/deewaniyat/1271339291/whose-side-will-jeet-stand-by/1000903762/watch?" }
       ],
-      image: "/images/MKWTH.jpg",
+      image: "/images/DEE.jpg",
     },
     {
       title: "Teri Meri Doriyaan",
@@ -160,8 +160,8 @@ function App() {
       year: "2022-2024",
       description: "A modern romantic drama showcasing three intertwined love stories destined by fate, yet challenged by misunderstandings.",
       episodes: [
-        { title: "Premiere: Threads of Fate", link: "https://www.voot.com/shows/teri-meri-doriyaan/1/1029376" },
-        { title: "Crossed Paths", link: "https://www.voot.com/shows/teri-meri-doriyaan/1/1029377" }
+        { title: "Episode 9: Sahiba at the Brars Event", link: "https://www.hotstar.com/in/shows/teri-meri-doriyaann/1260127842/sahiba-at-the-brars-event/1000282014/watch?search_query=teri+meri" },
+        { title: "Episode 10: Veer Makes an Announcement", link: "https://www.hotstar.com/in/shows/teri-meri-doriyaann/1260127842/veer-makes-an-announcement/1000282030/watch?search_query=teri+meri" }
       ],
       image: "/images/TMD.jpg",
     },
@@ -171,32 +171,32 @@ function App() {
       year: "2022",
       description: "A light-hearted cultural clash love story between a Haryanvi boy and a South Indian girl brought together by destiny.",
       episodes: [
-        { title: "Pilot: City Lights", link: "#" },
-        { title: "Midnight Confessions", link: "#" }
+        { title: "Episode 101: Mohini Blessed With a Girl", link: "https://www.hotstar.com/in/shows/harphoul-mohini/1971002681/mohini-blessed-with-a-girl/1971034300/watch?" },
+        { title: "Episode 102: Devi Reaches Nakhrauli", link: "https://www.hotstar.com/in/shows/harphoul-mohini/1971002681/devi-reaches-nakhrauli/1971034295/watch?" }
       ],
       image: "/images/HM.jpg",
     },
     {
-      title: "Deewaniyat",
-      type: "Star Plus",
-      year: "2024-2025",
-      description: "A passionate tale of love, obsession, and betrayal where emotions run deep and consequences are life-changing.",
+      title: "Muskuraane Ki Vajah Tum Ho",
+      type: "Colors TV",
+      year: "2022",
+      description: "A strong single mother's journey of resilience and love as she confronts betrayal and seeks dignity in a judgmental society",
       episodes: [
-        { title: "Act 1: Opening Night", link: "#" },
-        { title: "Act 2: Center Stage", link: "#" }
+        { title: "Episode 23: Kabir-Katha Gets Welcome", link: "https://www.hotstar.com/in/shows/muskuraane-ki-vajah-tum-ho/1971002690/kabir-katha-get-a-warm-welcome/1971103768/watch?" },
+        { title: "Episode 24: Katha Feels Uneasy", link: "https://www.hotstar.com/in/shows/muskuraane-ki-vajah-tum-ho/1971002690/katha-feels-uneasy/1971103735/watch?" }
       ],
-      image: "/images/DEE.jpg",
+      image: "/images/MKVTH.jpg",
     },
     {
-      title: "Kahani Pehle Pyaar ki",
-      type: "Dangal TV",
-      year: "2025",
-      description: "A heartfelt story set in Bhopal, where Neha’s childhood love for Sanju is tested by time, destiny, and self-discovery.",
+      title: "Choti Sarrdaarni",
+      type: "Colors TV",
+      year: "2019-2022",
+      description: "A courageous woman battles against societal norms and political conspiracies to protect her child and uphold justice.",
       episodes: [
-        { title: "Episode 1: The Strategist's Mind", link: "#" },
-        { title: "Episode 2: Battlefield Tactics", link: "#" }
+        { title: "Episode 792: Kulwant Feels Dejected", link: "https://www.hotstar.com/in/shows/choti-sarrdaarni/1971002364/kulwant-feels-dejected/1971022196/watch?" },
+        { title: "Episode 793: Jeeto Humiliates Mannat", link: "https://www.hotstar.com/in/shows/choti-sarrdaarni/1971002364/jeeto-humiliates-mannat/1971022206/watch?" }
       ],
-      image: "/images/KPPK.jpg",
+      image: "/images/CS.jpg",
     }
   ]
 
@@ -503,7 +503,7 @@ function App() {
               className="about-text"
             >
               <p>
-              With over a decade in the Indian television industry, I've had the privilege of directing 
+              With over a decade in the Indian television industry, I've had the privilege of direction 
               and setting up some of the most talked-about shows across Colors and StarPlus. My directorial 
               vision blends emotionally grounded storytelling with high production value to create engaging 
               narratives that resonate with diverse audiences.
@@ -556,7 +556,7 @@ function App() {
             viewport={{ once: true }}
             className="section-header"
           >
-            <h2>Featured Projects</h2>
+            <h2>Recent Projects</h2>
             <p>A showcase of my recent projects</p>
           </motion.div>
 
@@ -713,9 +713,14 @@ function App() {
               <h3>Follow My Work</h3>
               <div className="social-links">
                 <div className="social-icons">
-                  <a href="#" className="social-link">IMDb</a>
-                  <a href="#" className="social-link">LinkedIn</a>
-                  <a href="https://www.instagram.com/prabhatrawat75?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="social-link">Instagram</a>
+                  <a href="#" className="social-link">
+                    <Linkedin className="social-icon" size={20} />
+                    <span>LinkedIn</span>
+                  </a>
+                  <a href="https://www.instagram.com/prabhatrawat75?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="social-link">
+                    <Instagram className="social-icon" size={20} />
+                    <span>Instagram</span>
+                  </a>
                 </div>
               </div>
             </motion.div>
