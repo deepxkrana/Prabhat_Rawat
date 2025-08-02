@@ -217,30 +217,30 @@ function App() {
     },
     {
       name: "Surendra Pal",
-      role: "Actor",
+      role: "Actor & Producer",
       content: "From day one, Prabhat understood the soul of our story. His direction not only enhanced the narrative but created moments that viewers will remember forever.",
       avatar: "/images/Surendra.jpg",
       rating: 5
     },
     {
-      name: "Surendra Pal",
-      role: "Actor",
-      content: "From day one, Prabhat understood the soul of our story. His direction not only enhanced the narrative but created moments that viewers will remember forever.",
-      avatar: "/images/Surendra.jpg",
+      name: "Ajay Sinha",
+      role: "Producer : Ananda Films",
+      content: "As a producer, I value clarity and commitment—Prabhat brings both. His vision, calm leadership, and storytelling instincts always elevate the show beyond expectations.",
+      avatar: "/images/Ajay.jpg",
       rating: 5
     },
     {
-      name: "Surendra Pal",
-      role: "Actor",
-      content: "From day one, Prabhat understood the soul of our story. His direction not only enhanced the narrative but created moments that viewers will remember forever.",
-      avatar: "/images/Surendra.jpg",
+      name: "Vijayendra Kumeria",
+      role: "Actor & Producer",
+      content: "Prabhat sir guided me through every scene with patience, clarity, and insight. His direction pushed me to explore my potential and bring genuine emotional depth to my performance.",
+      avatar: "/images/Kumeriya.jpg",
       rating: 5
     },
     {
-      name: "Surendra Pal",
-      role: "Actor",
-      content: "From day one, Prabhat understood the soul of our story. His direction not only enhanced the narrative but created moments that viewers will remember forever.",
-      avatar: "/images/Surendra.jpg",
+      name: "Pradeep Kumar",
+      role: "Producer : Cockrow & Shaika",
+      content: "Prabhat is a director you trust. He listens, leads, and delivers—always focused on making every episode better, richer, and more emotionally impactful for audiences.",
+      avatar: "/images/Pradeep.jpg",
       rating: 5
     }
   ]
