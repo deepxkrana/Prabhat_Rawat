@@ -97,71 +97,86 @@ function App() {
 
   const featuredProjects = [
     {
-      title: "Breaking Boundaries",
+      title: "Choti Sarrdaarni",
       type: "Drama Series",
-      year: "2023",
-      description: "Award-winning drama series exploring complex human relationships",
-      awards: ["Emmy Nomination", "Golden Globe"],
-      image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&h=600&fit=crop",
+      year: "2019-2022",
+      description: "A courageous woman battles against societal norms and political conspiracies to protect her child and uphold justice.",
+      episodes: [
+        { title: "Episode 1: New Beginnings", link: "https://www.hotstar.com/in/tv/choti-sarrdaarni/1260021501" },
+        { title: "Episode 2: Challenges Arise", link: "https://www.hotstar.com/in/tv/choti-sarrdaarni/1260021502" }
+      ],
+      image: "/images/CS.jpg",
       video: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4",
       rating: 4.8,
       views: "2.3M",
       duration: "45 min"
     },
     {
-      title: "Real Lives",
-      type: "Reality Series",
-      year: "2022",
-      description: "Groundbreaking reality show that redefined the genre",
-      awards: ["Critics Choice", "Peabody Award"],
-      image: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=800&h=600&fit=crop",
+      title: "Muskuraane Ki Vajah Tum Ho",
+      type: "Drama Series",
+      year: "2022-2023",
+      description: "A strong single mother's journey of resilience and love as she confronts betrayal and seeks dignity in a judgmental society",
+      episodes: [
+        { title: "Pilot: A New Chapter", link: "https://www.sonyliv.com/shows/muskuraane-ki-vajah-tum-ho-1900000561" },
+        { title: "Facing the Storm", link: "https://www.sonyliv.com/shows/muskuraane-ki-vajah-tum-ho-1900000562" }
+      ],
+      image: "/images/MKWTH.jpg",
       video: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4",
       rating: 4.6,
     },
     {
-      title: "The Last Frontier",
-      type: "Documentary",
-      year: "2021",
-      description: "Cinematic documentary about environmental conservation",
-      awards: ["Oscar Shortlist", "Sundance"],
-      image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop",
+      title: "Teri Meri Doriyaan",
+      type: "Drama Series",
+      year: "2023-2024",
+      description: "A modern romantic drama showcasing three intertwined love stories destined by fate, yet challenged by misunderstandings.",
+      episodes: [
+        { title: "Premiere: Threads of Fate", link: "https://www.voot.com/shows/teri-meri-doriyaan/1/1029376" },
+        { title: "Crossed Paths", link: "https://www.voot.com/shows/teri-meri-doriyaan/1/1029377" }
+      ],
+      image: "/images/TMD.jpg",
       video: "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4",
-      rating: 4.9,
-      views: "3.1M",
-      duration: "90 min"
     }
   ]
 
   const allProjects = [
     {
-      title: "Breaking Boundaries",
+      title: "Choti Sarrdaarni",
       type: "Drama Series",
-      year: "2023",
-      description: "Award-winning drama series exploring complex human relationships",
-      awards: ["Emmy Nomination", "Golden Globe"],
-      image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&h=600&fit=crop",
+      year: "2019-2022",
+      description: "A courageous woman battles against societal norms and political conspiracies to protect her child and uphold justice.",
+      episodes: [
+        { title: "Episode 1: New Beginnings", link: "https://www.hotstar.com/in/tv/choti-sarrdaarni/1260021501" },
+        { title: "Episode 2: Challenges Arise", link: "https://www.hotstar.com/in/tv/choti-sarrdaarni/1260021502" }
+      ],
+      image: "/images/CS.jpg",
       rating: 4.8,
       views: "2.3M",
       duration: "45 min"
     },
     {
-      title: "Real Lives",
-      type: "Reality Series",
-      year: "2022",
-      description: "Groundbreaking reality show that redefined the genre",
-      awards: ["Critics Choice", "Peabody Award"],
-      image: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=800&h=600&fit=crop",
+      title: "Muskuraane Ki Vajah Tum Ho",
+      type: "Drama Series",
+      year: "2022-2023",
+      description: "A strong single mother's journey of resilience and love as she confronts betrayal and seeks dignity in a judgmental society",
+      episodes: [
+        { title: "Pilot: A New Chapter", link: "https://www.sonyliv.com/shows/muskuraane-ki-vajah-tum-ho-1900000561" },
+        { title: "Facing the Storm", link: "https://www.sonyliv.com/shows/muskuraane-ki-vajah-tum-ho-1900000562" }
+      ],
+      image: "/images/MKWTH.jpg",
       rating: 4.6,
       views: "1.8M",
       duration: "60 min"
     },
     {
-      title: "The Last Frontier",
-      type: "Documentary",
-      year: "2021",
-      description: "Cinematic documentary about environmental conservation",
-      awards: ["Oscar Shortlist", "Sundance"],
-      image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop",
+      title: "Teri Meri Doriyaan",
+      type: "Drama Series",
+      year: "2023-2024",
+      description: "A modern romantic drama showcasing three intertwined love stories destined by fate, yet challenged by misunderstandings.",
+      episodes: [
+        { title: "Premiere: Threads of Fate", link: "https://www.voot.com/shows/teri-meri-doriyaan/1/1029376" },
+        { title: "Crossed Paths", link: "https://www.voot.com/shows/teri-meri-doriyaan/1/1029377" }
+      ],
+      image: "/images/TMD.jpg",
       rating: 4.9,
       views: "3.1M",
       duration: "90 min"
@@ -169,9 +184,12 @@ function App() {
     {
       title: "City Nights",
       type: "Drama Series",
-      year: "2020",
+      year: "2020-2021",
       description: "Urban drama that captured the essence of modern city life",
-      awards: ["Screen Actors Guild", "Directors Guild"],
+      episodes: [
+        { title: "Pilot: City Lights", link: "#" },
+        { title: "Midnight Confessions", link: "#" }
+      ],
       image: "https://images.unsplash.com/photo-1514565131-fce0801e5785?w=800&h=600&fit=crop",
       rating: 4.7,
       views: "1.9M",
@@ -182,7 +200,10 @@ function App() {
       type: "Live Special",
       year: "2019",
       description: "Historic live television event celebrating theater",
-      awards: ["Primetime Emmy", "Tony Award"],
+      episodes: [
+        { title: "Act 1: Opening Night", link: "#" },
+        { title: "Act 2: Center Stage", link: "#" }
+      ],
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop",
       rating: 4.5,
       views: "1.2M",
@@ -193,7 +214,10 @@ function App() {
       type: "Documentary Series",
       year: "2018",
       description: "Epic documentary series on military strategy and history",
-      awards: ["Peabody Award", "Emmy Award"],
+      episodes: [
+        { title: "Episode 1: The Strategist's Mind", link: "#" },
+        { title: "Episode 2: Battlefield Tactics", link: "#" }
+      ],
       image: "https://images.unsplash.com/photo-1543852786-1cf6624b9987?w=800&h=600&fit=crop",
       rating: 4.8,
       views: "2.7M",
@@ -299,14 +323,14 @@ function App() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Alex Chen
+              Prabhat Rawat
             </motion.h1>
             <motion.h2
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              TV Show Director & Creative Visionary
+              Director & Creative Visionary
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, x: -50 }}
@@ -353,7 +377,7 @@ function App() {
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <h3>15+</h3>
+              <h3>10+</h3>
               <p>Years Experience</p>
             </motion.div>
             <motion.div 
@@ -361,7 +385,7 @@ function App() {
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <h3>50+</h3>
+              <h3>6+</h3>
               <p>Shows Directed</p>
             </motion.div>
             <motion.div 
@@ -400,7 +424,7 @@ function App() {
             className="section-header"
           >
             <h2>Featured Project</h2>
-            <p>Latest work that's making waves in the industry</p>
+            <p>Latest work that made waves in the industry</p>
           </motion.div>
 
           <div className="featured-carousel">
@@ -425,13 +449,22 @@ function App() {
                 <h3>{featuredProjects[currentProjectIndex].title}</h3>
                 <p className="featured-type">{featuredProjects[currentProjectIndex].type} • {featuredProjects[currentProjectIndex].year}</p>
                 <p className="featured-description">{featuredProjects[currentProjectIndex].description}</p>
-                <div className="featured-awards">
-                  {featuredProjects[currentProjectIndex].awards.map((award, index) => (
-                    <span key={index} className="award-tag">
-                      <Award className="award-icon" />
-                      {award}
-                    </span>
-                  ))}
+                <div className="episode-links">
+                  <h4>Featured Episodes:</h4>
+                  <div className="episode-list">
+                    {featuredProjects[currentProjectIndex].episodes.map((episode, index) => (
+                      <a 
+                        key={index} 
+                        href={episode.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="episode-link"
+                      >
+                        <ExternalLink size={14} />
+                        {episode.title}
+                      </a>
+                    ))}
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -494,9 +527,6 @@ function App() {
                 <h3>Expertise</h3>
                 <div className="skill-tags">
                   <span>Drama Series</span>
-                  <span>Reality TV</span>
-                  <span>Documentaries</span>
-                  <span>Live Television</span>
                   <span>Post-Production</span>
                   <span>Creative Direction</span>
                 </div>
@@ -512,12 +542,12 @@ function App() {
             >
               <img 
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=600&fit=crop" 
-                alt="Alex Chen - TV Director"
+                alt="Prabhat Rawat - TV Director"
                 className="director-portrait"
               />
               <div className="experience-badge">
                 <Calendar className="calendar-icon" />
-                <span>15+ Years</span>
+                <span>10+ Years</span>
               </div>
             </motion.div>
           </div>
@@ -535,7 +565,7 @@ function App() {
             className="section-header"
           >
             <h2>Featured Projects</h2>
-            <p>A showcase of my most impactful work</p>
+            <p>A showcase of my recent projects</p>
           </motion.div>
 
           <div className="projects-grid">
@@ -566,13 +596,25 @@ function App() {
                     </div>
                   </div>
                   <p>{project.description}</p>
-                  <div className="project-awards">
-                    {project.awards.map((award, awardIndex) => (
-                      <span key={awardIndex} className="award-tag">
-                        <Award className="award-icon" />
-                        {award}
-                      </span>
-                    ))}
+                  <div className="episode-links">
+                    <h4>Featured Episodes:</h4>
+                    <div className="episode-list">
+                      {project.episodes.slice(0, 2).map((episode, index) => (
+                        <a 
+                          key={index} 
+                          href={episode.link} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="episode-link"
+                        >
+                          <ExternalLink size={12} />
+                          {episode.title}
+                        </a>
+                      ))}
+                      {project.episodes.length > 2 && (
+                        <span className="more-episodes">+{project.episodes.length - 2} more episodes</span>
+                      )}
+                    </div>
                   </div>
                 </div>
               </motion.div>
@@ -655,21 +697,21 @@ function App() {
                 <Mail className="contact-icon" />
                 <div>
                   <h4>Email</h4>
-                  <p>alex.chen@example.com</p>
+                  <p>prabhatrawat75@gmail.com</p>
                 </div>
               </div>
               <div className="contact-item">
                 <Phone className="contact-icon" />
                 <div>
                   <h4>Phone</h4>
-                  <p>+1 (555) 123-4567</p>
+                  <p>+91 7718018881</p>
                 </div>
               </div>
               <div className="contact-item">
                 <MapPin className="contact-icon" />
                 <div>
                   <h4>Location</h4>
-                  <p>Los Angeles, CA</p>
+                  <p>Mumbai, Maharashtra</p>
                 </div>
               </div>
             </motion.div>
@@ -700,9 +742,9 @@ function App() {
           <div className="footer-content">
             <div className="footer-logo">
               <Video className="logo-icon" />
-              <span>Alex Chen</span>
+              <span>Prabhat Rawat</span>
             </div>
-            <p>&copy; 2024 Alex Chen. All rights reserved.</p>
+            <p>&copy; 2024 Prabhat Rawat. All rights reserved.</p>
           </div>
         </div>
       </footer>
