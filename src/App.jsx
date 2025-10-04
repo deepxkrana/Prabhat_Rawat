@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Play, Mail, Phone, MapPin, Award, Users, Video, Star, Quote, Calendar, Clock, Eye, Heart, Share2, ArrowRight, ArrowLeft, ArrowDown, ExternalLink, Linkedin, Instagram } from 'lucide-react'
+import { Menu, X, Play, Mail, Phone, MapPin, Award, Users, Video, Star, Quote, Calendar, Clock, Eye, Heart, Share2, ArrowRight, ArrowLeft, ArrowDown, ExternalLink, Linkedin, Instagram, Clapperboard } from 'lucide-react'
 import './App.css'
 
 function App() {
@@ -713,9 +713,9 @@ function App() {
               <h3>Follow My Work</h3>
               <div className="social-links">
                 <div className="social-icons">
-                  <a href="#" className="social-link">
-                    <Linkedin className="social-icon" size={20} />
-                    <span>LinkedIn</span>
+                  <a href="https://www.imdb.com/name/nm17697883/?ref_=ext_shr_lnk" className="social-link">
+                    <Clapperboard className="social-icon" size={20} />
+                    <span>IMDb</span>
                   </a>
                   <a href="https://www.instagram.com/prabhatrawat75?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="social-link">
                     <Instagram className="social-icon" size={20} />
